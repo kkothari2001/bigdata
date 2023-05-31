@@ -1,0 +1,213 @@
+Script started on 2023-05-08 09:58:45+05:30 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="192" LINES="49"]
+
+ [1m[97m    ▄▄▄[0m
+ [1m[97m ▄█████▄▄ [0m
+ [1m[97m███[46m▀▀▀▀[40m▀[46m▀[40m▀[46m▀[0m
+ [1m[97m███[46m▄   [22m[30m▀ ▀[0m[36m▀[0m
+ [1m[97m ▄[46m  [0m[1m[97m█████▄ [22m[31m█▄[0m
+ [22m[31m▀▀[0m[1m[41m[97m▄[46m▄   [41m▄▄▄[0m[22m[31m▀██▀[0m
+ [1m[97m ██▀▀▀██▀  [22m[31m▀[0m
+ [1m[97m ▀▀▀▀ ▀▀▀▀[0m
+ 
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                ]2;kmk@pop-os:~/spark-3.3.2-bin-hadoop3/notebooks]1;..op3/notebooks[0m[27m[24m[J(base) [38;5;107m~/spark-3.3.2-bin-hadoop3/notebooks[39m 
+[37m❯[39m [K[?1h=[?2004hscript flightscript[19D../bin/spark-shell -i flight.scala[?1l>[?2004l
+]2;../bin/spark-shell -i flight.scala]1;../bin/spark-shellSLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/home/kmk/spark-3.3.2-bin-hadoop3/jars/log4j-slf4j-impl-2.17.2.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/home/kmk/hadoop-3.3.4/share/hadoop/common/lib/slf4j-reload4j-1.7.36.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+23/05/08 09:59:09 WARN Utils: Your hostname, pop-os resolves to a loopback address: 127.0.1.1; using 192.168.1.115 instead (on interface wlo1)
+23/05/08 09:59:09 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+Spark context Web UI available at http://192.168.1.115:4040
+Spark context available as 'sc' (master = spark://192.168.1.115:7077, app id = app-20230508095929-0004).
+Spark session available as 'spark'.
+[Stage 0:>                                                          (0 + 0) / 1][Stage 0:>                                                          (0 + 1) / 1]                                                                                [Stage 1:>                                                          (0 + 6) / 6][Stage 1:=============================>                             (3 + 3) / 6]                                                                                +---+---------+-------+-----------+--------------+-----+-------------+----------------+-------+--------+---------+-----+
+|_c0|  airline| flight|source_city|departure_time|stops| arrival_time|destination_city|  class|duration|days_left|price|
++---+---------+-------+-----------+--------------+-----+-------------+----------------+-------+--------+---------+-----+
+|  0| SpiceJet|SG-8709|      Delhi|       Evening| zero|        Night|          Mumbai|Economy|    2.17|        1| 5953|
+|  1| SpiceJet|SG-8157|      Delhi| Early_Morning| zero|      Morning|          Mumbai|Economy|    2.33|        1| 5953|
+|  2|  AirAsia| I5-764|      Delhi| Early_Morning| zero|Early_Morning|          Mumbai|Economy|    2.17|        1| 5956|
+|  3|  Vistara| UK-995|      Delhi|       Morning| zero|    Afternoon|          Mumbai|Economy|    2.25|        1| 5955|
+|  4|  Vistara| UK-963|      Delhi|       Morning| zero|      Morning|          Mumbai|Economy|    2.33|        1| 5955|
+|  5|  Vistara| UK-945|      Delhi|       Morning| zero|    Afternoon|          Mumbai|Economy|    2.33|        1| 5955|
+|  6|  Vistara| UK-927|      Delhi|       Morning| zero|      Morning|          Mumbai|Economy|    2.08|        1| 6060|
+|  7|  Vistara| UK-951|      Delhi|     Afternoon| zero|      Evening|          Mumbai|Economy|    2.17|        1| 6060|
+|  8| GO_FIRST| G8-334|      Delhi| Early_Morning| zero|      Morning|          Mumbai|Economy|    2.17|        1| 5954|
+|  9| GO_FIRST| G8-336|      Delhi|     Afternoon| zero|      Evening|          Mumbai|Economy|    2.25|        1| 5954|
+| 10| GO_FIRST| G8-392|      Delhi|     Afternoon| zero|      Evening|          Mumbai|Economy|    2.25|        1| 5954|
+| 11| GO_FIRST| G8-338|      Delhi|       Morning| zero|    Afternoon|          Mumbai|Economy|    2.33|        1| 5954|
+| 12|   Indigo|6E-5001|      Delhi| Early_Morning| zero|      Morning|          Mumbai|Economy|    2.17|        1| 5955|
+| 13|   Indigo|6E-6202|      Delhi|       Morning| zero|    Afternoon|          Mumbai|Economy|    2.17|        1| 5955|
+| 14|   Indigo| 6E-549|      Delhi|     Afternoon| zero|      Evening|          Mumbai|Economy|    2.25|        1| 5955|
+| 15|   Indigo|6E-6278|      Delhi|       Morning| zero|      Morning|          Mumbai|Economy|    2.33|        1| 5955|
+| 16|Air_India| AI-887|      Delhi| Early_Morning| zero|      Morning|          Mumbai|Economy|    2.08|        1| 5955|
+| 17|Air_India| AI-665|      Delhi| Early_Morning| zero|      Morning|          Mumbai|Economy|    2.17|        1| 5955|
+| 18|  AirAsia| I5-747|      Delhi|       Evening|  one|Early_Morning|          Mumbai|Economy|   12.25|        1| 5949|
+| 19|  AirAsia| I5-747|      Delhi|       Evening|  one|      Morning|          Mumbai|Economy|   16.33|        1| 5949|
++---+---------+-------+-----------+--------------+-----+-------------+----------------+-------+--------+---------+-----+
+only showing top 20 rows
+
+root
+ |-- _c0: integer (nullable = true)
+ |-- airline: string (nullable = true)
+ |-- flight: string (nullable = true)
+ |-- source_city: string (nullable = true)
+ |-- departure_time: string (nullable = true)
+ |-- stops: string (nullable = true)
+ |-- arrival_time: string (nullable = true)
+ |-- destination_city: string (nullable = true)
+ |-- class: string (nullable = true)
+ |-- duration: double (nullable = true)
+ |-- days_left: integer (nullable = true)
+ |-- price: integer (nullable = true)
+
+[Stage 6:>                                                          (0 + 6) / 6][Stage 6:===================>                                       (2 + 4) / 6][Stage 6:=============================>                             (3 + 3) / 6][Stage 6:=======================================>                   (4 + 2) / 6][Stage 6:=================================================>         (5 + 1) / 6]                                                                                +-------+-----------------+-------+--------------------+-----------+--------------+------+------------+----------------+--------+------------------+------------------+------------------+
+|summary|              _c0|airline|              flight|source_city|departure_time| stops|arrival_time|destination_city|   class|          duration|         days_left|             price|
++-------+-----------------+-------+--------------------+-----------+--------------+------+------------+----------------+--------+------------------+------------------+------------------+
+|  count|           300153| 300153|              300153|     300153|        300153|300153|      300153|          300153|  300153|            300153|            300153|            300153|
+|   mean|         150076.0|   null|5.427411873908628...|       null|          null|  null|        null|            null|    null|12.221020812719065|26.004750910369044|20889.660523133203|
+| stddev|86646.85201148395|   null|1.803651814074491...|       null|          null|  null|        null|            null|    null| 7.191997238119004| 13.56100368709358|22697.767366074422|
+|    min|                0|AirAsia|              6E-102|  Bangalore|     Afternoon|   one|   Afternoon|       Bangalore|Business|              0.83|                 1|              1105|
+|    max|           300152|Vistara|              UK-996|     Mumbai|         Night|  zero|       Night|          Mumbai| Economy|             49.83|                49|            123071|
++-------+-----------------+-------+--------------------+-----------+--------------+------+------------+----------------+--------+------------------+------------------+------------------+
+
+[Stage 9:>                                                         (0 + 8) / 12][Stage 9:===================>                                      (4 + 8) / 12]                                                                                [Stage 16:=======================>                               (42 + 8) / 100][Stage 16:=================================>                     (61 + 8) / 100][Stage 16:===============================================>       (86 + 8) / 100]                                                                                [Stage 18:==============================================>         (62 + 9) / 75]                                                                                +-----------+-------------+
+|source_city|           id|
++-----------+-------------+
+|  Bangalore|            0|
+|    Chennai| 300647710720|
+|     Mumbai| 438086664192|
+|    Kolkata| 592705486848|
+|      Delhi|1108101562368|
+|  Hyderabad|1425929142272|
++-----------+-------------+
+
+[Stage 20:================================>                     (119 + 8) / 200][Stage 20:==============================================>       (173 + 4) / 200]                                                                                [Stage 22:=================================================>    (185 + 4) / 200]                                                                                [Stage 24:========================================>             (151 + 7) / 200]                                                                                +-----------+----------------+--------+-----+-------------+
+|source_city|destination_city|duration|price|           id|
++-----------+----------------+--------+-----+-------------+
+|      Delhi|          Mumbai|    2.17| 5953|1108101562368|
+|      Delhi|          Mumbai|    2.33| 5953|1108101562368|
+|      Delhi|          Mumbai|    2.17| 5956|1108101562368|
+|      Delhi|          Mumbai|    2.25| 5955|1108101562368|
+|      Delhi|          Mumbai|    2.33| 5955|1108101562368|
+|      Delhi|          Mumbai|    2.33| 5955|1108101562368|
+|      Delhi|          Mumbai|    2.08| 6060|1108101562368|
+|      Delhi|          Mumbai|    2.17| 6060|1108101562368|
+|      Delhi|          Mumbai|    2.17| 5954|1108101562368|
+|      Delhi|          Mumbai|    2.25| 5954|1108101562368|
+|      Delhi|          Mumbai|    2.25| 5954|1108101562368|
+|      Delhi|          Mumbai|    2.33| 5954|1108101562368|
+|      Delhi|          Mumbai|    2.17| 5955|1108101562368|
+|      Delhi|          Mumbai|    2.17| 5955|1108101562368|
+|      Delhi|          Mumbai|    2.25| 5955|1108101562368|
+|      Delhi|          Mumbai|    2.33| 5955|1108101562368|
+|      Delhi|          Mumbai|    2.08| 5955|1108101562368|
+|      Delhi|          Mumbai|    2.17| 5955|1108101562368|
+|      Delhi|          Mumbai|   12.25| 5949|1108101562368|
+|      Delhi|          Mumbai|   16.33| 5949|1108101562368|
++-----------+----------------+--------+-----+-------------+
+only showing top 20 rows
+
++----------------+-------------+
+|destination_city|           id|
++----------------+-------------+
+|       Bangalore|            0|
+|         Chennai| 300647710720|
+|          Mumbai| 438086664192|
+|         Kolkata| 592705486848|
+|           Delhi|1108101562368|
+|       Hyderabad|1425929142272|
++----------------+-------------+
+
+[Stage 37:===========>  (170 + 4) / 200][Stage 38:>               (0 + 4) / 200][Stage 37:=============>(198 + 2) / 200][Stage 38:==>            (31 + 6) / 200]                                                                                +-------------+------------+--------+-----+
+|       origin| destination|duration|price|
++-------------+------------+--------+-----+
+|1108101562368|438086664192|    2.17| 5953|
+|1108101562368|438086664192|    2.33| 5953|
+|1108101562368|438086664192|    2.17| 5956|
+|1108101562368|438086664192|    2.25| 5955|
+|1108101562368|438086664192|    2.33| 5955|
+|1108101562368|438086664192|    2.33| 5955|
+|1108101562368|438086664192|    2.08| 6060|
+|1108101562368|438086664192|    2.17| 6060|
+|1108101562368|438086664192|    2.17| 5954|
+|1108101562368|438086664192|    2.25| 5954|
+|1108101562368|438086664192|    2.25| 5954|
+|1108101562368|438086664192|    2.33| 5954|
+|1108101562368|438086664192|    2.17| 5955|
+|1108101562368|438086664192|    2.17| 5955|
+|1108101562368|438086664192|    2.25| 5955|
+|1108101562368|438086664192|    2.33| 5955|
+|1108101562368|438086664192|    2.08| 5955|
+|1108101562368|438086664192|    2.17| 5955|
+|1108101562368|438086664192|   12.25| 5949|
+|1108101562368|438086664192|   16.33| 5949|
++-------------+------------+--------+-----+
+only showing top 20 rows
+
+[Stage 41:===================================================>  (192 + 4) / 200]                                                                                [Stage 43:>                                                         (0 + 6) / 6][Stage 43:======================================>                   (4 + 2) / 6]                                                                                [Stage 45:=========>    (141 + 6) / 200][Stage 46:>                 (0 + 2) / 6][Stage 45:===========>  (160 + 6) / 200][Stage 46:>                 (0 + 2) / 6][Stage 46:>                                                         (0 + 6) / 6][Stage 46:======================================>                   (4 + 2) / 6][Stage 47:===========================>                          (102 + 8) / 200][Stage 47:======================================>               (142 + 8) / 200][Stage 47:=================================================>    (182 + 8) / 200]                                                                                [Stage 48:======================================>                   (4 + 2) / 6]                                                                                Number of Flight Routes: 300153 
+
+Number of Airports: 6 
+
+Longest Routes (time):
+Source: Chennai; Destination: Bangalore; Cost: 23891; Duration: 49.83 h
+Source: Chennai; Destination: Bangalore; Cost: 17538; Duration: 49.83 h
+Source: Bangalore; Destination: Chennai; Cost: 55122; Duration: 47.75 h
+Source: Bangalore; Destination: Chennai; Cost: 7461; Duration: 47.75 h
+Source: Chennai; Destination: Bangalore; Cost: 17223; Duration: 47.08 h
+Source: Chennai; Destination: Bangalore; Cost: 12813; Duration: 45.83 h
+Source: Chennai; Destination: Bangalore; Cost: 51928; Duration: 45.83 h
+Source: Chennai; Destination: Kolkata; Cost: 32439; Duration: 44.5 h
+Source: Hyderabad; Destination: Kolkata; Cost: 33853; Duration: 42.0 h
+Source: Bangalore; Destination: Hyderabad; Cost: 6500; Duration: 41.83 h
+Source: Bangalore; Destination: Hyderabad; Cost: 6920; Duration: 41.83 h
+Source: Bangalore; Destination: Delhi; Cost: 21921; Duration: 41.58 h
+Source: Chennai; Destination: Kolkata; Cost: 31398; Duration: 41.5 h
+Source: Chennai; Destination: Delhi; Cost: 5601; Duration: 41.08 h
+Source: Hyderabad; Destination: Mumbai; Cost: 10967; Duration: 40.92 h
+Source: Bangalore; Destination: Chennai; Cost: 11522; Duration: 40.75 h
+Source: Hyderabad; Destination: Kolkata; Cost: 26494; Duration: 40.67 h
+Source: Bangalore; Destination: Chennai; Cost: 65674; Duration: 40.67 h
+Source: Bangalore; Destination: Chennai; Cost: 17674; Duration: 40.67 h
+Source: Chennai; Destination: Bangalore; Cost: 6388; Duration: 40.5 h
+
+
+Indegrees of each Vertex (Airport):
+
+
+Vertices (Airports) with highest Indegrees:
+
+
+Airport with highest Indegree vertex: Mumbai with an Indegree of 59097
+
+
+[Stage 185:(140 + 9) / 200][Stage 186:>(8 + 0) / 200][Stage 187:>(0 + 0) / 200][Stage 185:(190 + 4) / 200][Stage 186:(19 + 4) / 200][Stage 187:>(0 + 0) / 200][Stage 186:====>         (63 + 8) / 200][Stage 187:>              (0 + 0) / 200][Stage 186:=========>   (142 + 8) / 200][Stage 187:>              (0 + 0) / 200][Stage 187:===============>                                      (58 + 8) / 200]                                                                                [Stage 198:============>(193 + 4) / 200][Stage 199:>              (7 + 4) / 200][Stage 199:=====================>                                (80 + 8) / 200][Stage 199:========================================>           (155 + 10) / 200]                                                                                [Stage 213:==========>  (168 + 8) / 200][Stage 214:>              (0 + 0) / 200][Stage 214:=========>                                            (37 + 8) / 200][Stage 214:==================================>                  (130 + 8) / 200]                                                                                [Stage 231:===========> (182 + 4) / 200][Stage 232:>              (0 + 4) / 200][Stage 232:========>                                             (33 + 8) / 200][Stage 232:=======================>                              (88 + 8) / 200][Stage 232:============================================>        (168 + 8) / 200]                                                                                [Stage 252:============>(185 + 8) / 200][Stage 253:>              (0 + 0) / 200][Stage 253:=====================>                                (78 + 8) / 200][Stage 253:=============================================>       (172 + 8) / 200]                                                                                [Stage 277:=============>                                        (50 + 8) / 200][Stage 277:===========================>                         (105 + 8) / 200][Stage 277:============================================>        (167 + 9) / 200]                                                                                [Stage 304:==========================>                          (101 + 8) / 200][Stage 304:====================================================>(197 + 3) / 200]                                                                                [Stage 334:==============>                                       (52 + 8) / 200][Stage 334:==============================================>      (177 + 8) / 200]                                                                                [Stage 367:==================>                                   (68 + 8) / 200][Stage 367:================================>                    (121 + 8) / 200][Stage 367:================================================>    (182 + 8) / 200]                                                                                [Stage 403:>                                                      (1 + 8) / 200][Stage 403:======================>                               (82 + 8) / 200][Stage 403:===========================================>         (165 + 8) / 200]                                                                                [Stage 441:========>    (130 + 8) / 200][Stage 442:>              (0 + 0) / 200][Stage 441:============>(185 + 8) / 200][Stage 442:>              (0 + 0) / 200][Stage 442:===========================>                         (103 + 8) / 200]                                                                                [Stage 484:==================>                                   (68 + 8) / 200][Stage 484:=======================================>             (149 + 8) / 200]                                                                                [Stage 529:===============>                                      (59 + 9) / 200][Stage 529:=====================================>               (142 + 8) / 200]                                                                                [Stage 577:=====================>                                (80 + 8) / 200]                                                                                [Stage 628:================================>                    (124 + 8) / 200]                                                                                [Stage 682:=========================>                            (94 + 8) / 200]                                                                                [Stage 739:========================>                             (92 + 9) / 200]                                                                                [Stage 799:=========================================>           (157 + 8) / 200]                                                                                [Stage 862:============================>                        (108 + 8) / 200]                                                                                [Stage 997:==============================================>      (176 + 7) / 200]                                                                                [Stage 1069:================================================>   (187 + 5) / 200]                                                                                [Stage 1144:====================>                                (79 + 9) / 200][Stage 1144:==================================================> (195 + 4) / 200]                                                                                [Stage 1222:===========================================>        (168 + 8) / 200]                                                                                [Stage 1302:===========>(188 + 8) / 200][Stage 1303:>             (0 + 0) / 200][Stage 1303:============================>                       (111 + 8) / 200]                                                                                [Stage 1387:====================>                                (79 + 8) / 200]                                                                                [Stage 1473:===========>(190 + 8) / 200][Stage 1474:>             (0 + 0) / 200][Stage 1474:=========================>                           (95 + 8) / 200][Stage 1474:=================================================>  (191 + 4) / 200]                                                                                [Stage 1564:=====================================>              (144 + 8) / 200]                                                                                [Stage 1657:==============>                                      (56 + 9) / 200][Stage 1657:============================================>       (172 + 8) / 200]                                                                                [Stage 1753:==============================>                     (119 + 8) / 200]                                                                                [Stage 1852:======================================>             (147 + 9) / 200]                                                                                [Stage 1954:=============>                                       (50 + 9) / 200][Stage 1954:=====================================>              (144 + 9) / 200]                                                                                [Stage 2059:============>                                        (48 + 9) / 200][Stage 2059:=======================================>            (150 + 8) / 200]                                                                                [Stage 2167:=================>                                   (67 + 8) / 200][Stage 2167:============================================>       (171 + 8) / 200]                                                                                [Stage 2278:=================>                                   (65 + 9) / 200]                                                                                [Stage 2392:===============================>                    (121 + 8) / 200]                                                                                [Stage 2509:=========================>                           (96 + 8) / 200][Stage 2509:==================================================> (195 + 4) / 200]                                                                                [Stage 2629:========================>                            (93 + 8) / 200][Stage 2629:================================================>   (186 + 5) / 200]                                                                                [Stage 2752:=========================>                           (98 + 8) / 200][Stage 2752:=============================================>      (174 + 8) / 200]                                                                                [Stage 2878:======================>                              (84 + 8) / 200][Stage 2878:===============================================>    (183 + 8) / 200]                                                                                [Stage 3007:============>                                        (49 + 8) / 200][Stage 3007:==============================================>     (178 + 8) / 200]                                                                                [Stage 3139:==================>                                  (70 + 8) / 200][Stage 3139:=================================================>  (189 + 6) / 200]                                                                                [Stage 3274:=============>                                       (52 + 8) / 200][Stage 3274:==============================================>     (180 + 4) / 200]                                                                                [Stage 3412:======>                                              (24 + 9) / 200][Stage 3412:====================================>               (141 + 8) / 200]                                                                                [Stage 3552:===========>(197 + 3) / 200][Stage 3553:>             (0 + 5) / 200][Stage 3553:====================>                                (79 + 9) / 200][Stage 3553:==========================================>         (163 + 8) / 200]                                                                                [Stage 3697:=====>                                               (22 + 8) / 200][Stage 3697:=======================>                             (90 + 8) / 200][Stage 3697:=======================================>            (151 + 8) / 200]                                                                                [Stage 3843:==========> (178 + 8) / 200][Stage 3844:>             (0 + 0) / 200][Stage 3844:============>                                        (48 + 8) / 200][Stage 3844:=================================>                  (128 + 8) / 200]                                                                                [Stage 3993:===========>(189 + 8) / 200][Stage 3994:>             (0 + 0) / 200][Stage 3994:============>                                        (46 + 8) / 200][Stage 3994:===============================>                    (123 + 8) / 200][Stage 3994:==================================================> (196 + 4) / 200]                                                                                [Stage 4147:==========>                                          (38 + 9) / 200][Stage 4147:==============================>                     (116 + 8) / 200]                                                                                [Stage 4302:===========>(196 + 4) / 200][Stage 4303:>             (4 + 4) / 200][Stage 4303:===========================>                        (105 + 8) / 200]                                                                                [Stage 4462:=======================>                             (88 + 8) / 200][Stage 4462:===========================================>        (168 + 8) / 200]                                                                                [Stage 4624:==========>                                          (41 + 8) / 200][Stage 4624:================================>                   (125 + 8) / 200]                                                                                [Stage 4789:=================>                                   (66 + 8) / 200][Stage 4789:=====================================>              (145 + 8) / 200]                                                                                [Stage 4956:==========> (178 + 8) / 200][Stage 4957:>             (0 + 0) / 200][Stage 4957:========================>                            (92 + 8) / 200]                                                                                [Stage 5128:===============>                                     (58 + 9) / 200][Stage 5128:=======================================>            (153 + 8) / 200]                                                                                [Stage 5301:==========> (175 + 8) / 200][Stage 5302:>             (0 + 0) / 200][Stage 5302:============>                                        (47 + 9) / 200][Stage 5302:====================================>               (140 + 9) / 200]                                                                                [Stage 5478:=========>  (151 + 8) / 200][Stage 5479:>             (0 + 0) / 200][Stage 5479:===========>                                         (43 + 8) / 200][Stage 5479:===========================================>        (168 + 8) / 200]                                                                                [Stage 5659:==========>                                          (41 + 8) / 200][Stage 5659:=================================>                  (130 + 9) / 200]                                                                                [Stage 5842:==================>                                  (69 + 8) / 200][Stage 5842:=============================================>     (177 + 10) / 200]                                                                                [Stage 6028:======>                                              (23 + 8) / 200][Stage 6028:===============================>                    (121 + 8) / 200]                                                                                [Stage 6217:=====>                                               (22 + 8) / 200][Stage 6217:===================================>                (138 + 8) / 200]                                                                                The Airport with highest PageRank is Mumbai and has a PageRank value of 1.1647213280216286
+
+
+Routes with lowest cost:
+Source: Chennai; Destination: Hyderabad; Cost: 1105; Duration: 8.42 h
+Source: Chennai; Destination: Hyderabad; Cost: 1105; Duration: 4.75 h
+Source: Chennai; Destination: Hyderabad; Cost: 1105; Duration: 1.0 h
+Source: Chennai; Destination: Hyderabad; Cost: 1105; Duration: 7.5 h
+Source: Chennai; Destination: Hyderabad; Cost: 1105; Duration: 1.17 h
+Source: Chennai; Destination: Hyderabad; Cost: 1105; Duration: 8.83 h
+Source: Chennai; Destination: Hyderabad; Cost: 1105; Duration: 5.0 h
+Source: Chennai; Destination: Hyderabad; Cost: 1105; Duration: 5.92 h
+Source: Chennai; Destination: Hyderabad; Cost: 1105; Duration: 5.17 h
+Source: Chennai; Destination: Hyderabad; Cost: 1105; Duration: 7.0 h
+Source: Chennai; Destination: Hyderabad; Cost: 1105; Duration: 9.67 h
+Source: Chennai; Destination: Hyderabad; Cost: 1105; Duration: 5.25 h
+Source: Chennai; Destination: Hyderabad; Cost: 1105; Duration: 4.92 h
+Source: Chennai; Destination: Hyderabad; Cost: 1105; Duration: 7.08 h
+Source: Chennai; Destination: Hyderabad; Cost: 1105; Duration: 7.92 h
+Source: Chennai; Destination: Hyderabad; Cost: 1105; Duration: 4.42 h
+Source: Chennai; Destination: Hyderabad; Cost: 1105; Duration: 4.83 h
+Source: Chennai; Destination: Hyderabad; Cost: 1105; Duration: 6.75 h
+Source: Chennai; Destination: Hyderabad; Cost: 1105; Duration: 6.33 h
+Source: Chennai; Destination: Hyderabad; Cost: 1105; Duration: 9.5 h
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                ]2;kmk@pop-os:~/spark-3.3.2-bin-hadoop3/notebooks]1;..op3/notebooks[0m[27m[24m[J(base) [38;5;107m~/spark-3.3.2-bin-hadoop3/notebooks[39m 
+[37m❯[39m [K[?1h=[?2004h[?2004l
+
+Script done on 2023-05-08 10:02:05+05:30 [COMMAND_EXIT_CODE="0"]
